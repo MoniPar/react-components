@@ -7,18 +7,21 @@ const concepts = [
   {
     title: 'Components',
     image: componentsImage,
+    alt: "Building blocks in a pyramid structure",
     description:
       'Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. Components can receive data via props, and they can render dynamic output using JSX.',
   },
   {
     title: 'State',
     image: stateImage,
+    alt: "A cylindrical shape segmented into four parts",
     description:
       'State is data that may change over time. As it changes, the UI should be updated to reflect the updated data. Each component can maintain its own state and multiple components can share state.',
   },
   {
     title: 'Events',
     image: eventsImage,
+    alt: "A loud speaker",
     description:
       'Event handlers are added via props to (built-in) components. You pass functions as values to such event handlers to control which functions gets executed for which event.',
   },
@@ -34,9 +37,19 @@ function App() {
       </header>
       <ul id="concepts">
         <li className="concept">
-          <img src="TODO: IMAGE" alt="TODO: TITLE" />
-          <h2>TODO: TITLE</h2>
-          <p>TODO: DESCRIPTION</p>
+          <img src={concepts[0].image} alt={concepts[0].alt} />
+          <h2>{concepts[0].title}</h2>
+          <p>{concepts[0].description}</p>
+        </li>
+        <li className="concept">
+          <img src={concepts[1].image} alt={concepts[1].alt} />
+          <h2>{concepts[1].title}</h2>
+          <p>{concepts[1].description}</p>
+        </li>
+        <li className="concept">
+          <img src={concepts[2].image} alt={concepts[2].alt} />
+          <h2>{concepts[2].title}</h2>
+          <p>{concepts[2].description}</p>
         </li>
       </ul>
     </div>
