@@ -1,4 +1,4 @@
-import Header from './components/UI/Header';
+import Header from './components/Header/Header';
 import Concepts from './components/Concepts/Concepts';
 
 import keyConceptsImage from './assets/images/key-concepts.png';
