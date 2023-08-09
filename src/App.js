@@ -1,6 +1,7 @@
-import Header from './components/Concepts/Header';
+import Header from './components/UI/Header';
 import Concepts from './components/Concepts/Concepts';
 
+import keyConceptsImage from './assets/images/key-concepts.png';
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
@@ -33,8 +34,8 @@ const concepts = [
 const App = () => {
   return (
     <div>
-      <Header />
-      <Concepts item={concepts} />
+      <Header imgUrl={keyConceptsImage}/>
+      <Concepts data={concepts} />
     </div>
   );
 }
